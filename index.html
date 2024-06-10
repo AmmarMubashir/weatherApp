@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="searchBox">
+        <input
+          type="text"
+          class="searchInput"
+          placeholder="Enter a city to search"
+        />
+        <button type="submit" class="searchIcon">
+          <i class="ri-search-2-line"></i>
+        </button>
+      </form>
+      <div class="error">
+        <p>Invalid city name</p>
+      </div>
+      <div class="hide">
+        <img src="/img/clear.png" class="weatherImg" alt="" />
+        <p class="temp">2<sup>o</sup><span>C</span></p>
+        <p class="city">Attock</p>
+        <div class="tempDetails">
+          <div class="humidityBox">
+            <img src="/img/humidity.png" alt="" />
+            <div class="humidityContent">
+              <p class="humidity">80%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="windBox">
+            <img src="/img/wind.png" alt="" />
+            <div class="windContent">
+              <p class="speed">7.72km/h</p>
+              <p>Wind speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
